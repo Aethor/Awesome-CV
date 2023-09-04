@@ -4,7 +4,7 @@
 %%% TeX-engine: xetex
 %%% End: 
 
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[12pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -36,7 +36,7 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo{./examples/profile.png}
 \name{Arthur}{Amalvy}
-\position{Computer Science Engineer}
+\position{Candidat à une thèse de doctorat}
 \address{Nancy, France}
 \mobile{+33620730174}
 \email{arthur.amalvyoff@gmail.com}
@@ -70,183 +70,243 @@
   {\thepage}
 
 
-\cvsection{Experience}
+
+\cvsection{Formation}
 
 \begin{cventries}
 
   \cventry
-  {AI Engineer}
-  {Prokov Editions}
-  {Nancy, France}
-  {October 2020 - now}
-  {
-    \begin{cvitems}
-      \item AI specialist for a medical software company
-    \end{cvitems}
-  }
-
-  \cventry
-  {Master in Computer Science and Information Engineering} % Degree
+  {Master en Informatique et ingénierie de l'information} % Degree
   {National Central University} % Institution
   {Taiwan} % Location
-  {September 2019 - July 2020} % Date(s)
+  {Septembre 2019 - Juillet 2020} % Date(s)
   {
     \begin{cvitems} % Description(s) bullet points
-      \item Dual-Degree program
-      \item Courses at the university, focused on machine learning, deep learning and natural language processing
-      \item Research at the Intelligent Information Research Laboratory (IISR), specialised in natural language processing
+      \item Double-diplôme
+      \item Suivi de plusieurs cours à l'université, notamment :
+        \begin{itemize}
+          \item apprentissage machine et apprentissage profond 
+          \item traitement du langage naturel
+          \item traitement du langage naturel appliqué aux réseaux sociaux 
+        \end{itemize}
+      \item Classé respectivement 7e puis 4e sur plus de 110 étudiants du département informatique à l'issus des deux semestres
+      \item Recherches à l'~\textit{Intelligent Information Research Laboratory (IISR)}, specialisé en traitement du langage naturel
+      \item Mémoire de master sur l'extraction automatique et la visualisation de réseaux de personnages dans les romans
     \end{cvitems}
   }
 
   \cventry
-  {Engineering Degree in Computer Science}
-  {University of Technology of Belfort-Montbéliard}
-  {Belfort, Territoire de Belfort, France}
-  {September 2017 - July 2020 (current)}
+  {Diplôme d'ingénieur en informatique}
+  {Université de technologie de Belfort-Montbéliard}
+  {Belfort, Territoire de Belfort}
+  {Septembre 2017 - Juillet 2020}
   {
     \begin{cvitems}
-      \item Specialisation in Image, Interaction and Virtual Reality (I2RV)
-    \end{cvitems}
-  }
-
-  \cventry
-  {Cloud Microservices Architect Intern}
-  {Idemia}
-  {Osny, Région Parisienne, France}
-  {September 2018 - February 2019}
-  {
-    \begin{cvitems}
-      \item Six-months engineering internship 
-      \item Conception and creation of a cloud based biometric system
-      \item Worked with several cloud-related technologies : AWS, Docker, Kubernetes, Flask, REST APIs, OpenAPI, Redis, RabbitMQ, Prometheus
+      \item Spécialisation en image, interaction et réalité virtuelle (\textit{I2RV})
+      \item Suivi de plusieurs cours relatifs à l'intelligence artificielle, dont :
+        \begin{itemize}
+          \item Optimisation et Recherche Opérationelle
+          \item Intelligence Artificielle : Concepts Fondamentaux et Langages Dédiés
+          \item Intelligence Artificielle pour Jeux Sérieux 
+        \end{itemize}
+      \item Premiers travaux sur l'extraction de réseaux de personnages sur des transcripts de cinéma
     \end{cvitems}
   }
 
   \cventry
   {DEUTEC}
-  {University of Technology of Belfort-Montbéliard}
+  {Université de Technologie de Belfort-Montbéliard}
   {Sévenans, Territoire de Belfort, France}
-  {September 2015 - July 2017}
+  {Septembre 2015 - Juillet 2017}
   {
     \begin{cvitems}
-      \item Integrated prep at UTBM
+      \item Prépa intégrée à l'UTBM
+      \item Début de spécialisation en informatique :
+        \begin{itemize}
+          \item Programmation en C
+          \item Algorithmes et structures de données
+          \item Programmation orientée objet
+        \end{itemize}
     \end{cvitems}
   }
 
   \cventry
-  {Baccalauréat}
+  {Baccalauréat scientifique}
   {Lycée Jacques Prévert}
   {Saint-Christol-Lès-Alès, Gard, France}
   {2015}
   {
     \begin{cvitems}
-      \item Obtained with high honors ("mention bien")
+      \item Obtenu avec mention bien
+    \end{cvitems}
+  }
+
+  
+\end{cventries}
+
+
+\cvsection{Expérience professionnelle}
+
+\begin{cventries}
+
+  \cventry
+  {Ingénieur en développement}
+  {Prokov Editions}
+  {Nancy, France}
+  {Octobre 2020 - maintenant}
+  {
+    \begin{cvitems}
+      \item Inclusion de fonctionnalités liées à l'intelligence artificielle dans un logiciel médical, telles que :
+      \begin{itemize}
+        \item Détection automatique de l'orientation d'un document
+        \item Prédiction de la prochaine action utilisateur dans le but de fluidifier l'interface
+      \end{itemize}
+      \item Analyse de données d'usage du logiciel
+    \end{cvitems}
+  }
+
+  \cventry
+  {Stage ingénieur}
+  {Idemia}
+  {Osny, Région Parisienne, France}
+  {Septembre 2018 - Février 2019}
+  {
+    \begin{cvitems}
+      \item Conception et implémentation d'un prototype service biométrique basé sur le cloud
+      \item Utilisation de plusieurs technologies liées au cloud
     \end{cvitems}
   }
 
 \end{cventries}
 
 
-\cvsection{Skills}
+\newpage
+
+\cvsection{Compétences}
 
 \begin{cvskills}
-  \cvskill{Languages}
-  {French (Native speaker), English (C2 level), Chinese (Beginnner)}
+  \cvskill{Langages}
+  {Anglais (Niveau C2), Chinois (débutant)}
   
-  \cvskill{Programming Languages}
-  {Mainly Python, C, Java (but also : Objective C, Swift, a bit of C++ and Javascript...)}
+  \cvskill{Langages de programmation}
+  {Principalement Python, C et Java}
 
-  \cvskill{Machine Learning}
-  {Classical machine learning, Neural Networks, Recurrent Neural Networks (LSTM / GRU), Transformers, Transfer-learning (BERT-based models...)}
+  \cvskill{Apprentissage machine}
+  {Apprentissage ``classique'', réseaux de neurones, réseaux de neurones récurrents, transformers, apprentissage par transfert (modèles types \textit{BERT})}
 
-  \cvskill{Main Tools}
-  {PyTorch, huggingface transformers, nltk, spacy, scikit-learn, GTK+, Linux, Git, Docker, Kubernetes}
+  \cvskill{Outils}
+  {PyTorch, huggingface transformers, nltk, spacy, scikit-learn}
 \end{cvskills}
 
 
-\cvsection{Events}
+\cvsection{Évenements}
 
 \begin{cvhonors}
   \cvhonor
   {T-Brain AI-Cup}
-  {Ranked 51st at the T-Brain AI Cup 2019}
+  {51e place à la T-Brain AI Cup 2019}
   {Taiwan}
   {2019}
   
   \cvhonor
-  {French Robotics Cup}
-  {Participated in the French Robotics Cup twice in a row for UTBM}
+  {Coupe de France de robotique}
+  {Double participation à la coupe de france de robotique sous les couleurs de l'UTBM}
   {La Roche sur Yon}
   {2018, 2019}
 \end{cvhonors}
 
 
-\cvsection{Projects}
+\cvsection{Projets}
 
 \begin{cventries}
 
   \cventry
-  {\href{https://gitlab.com/Aethor/bert-quote-attribution}{\textbf{gitlab link}}}
-  {Bert for Quote Attribution}
+  {Mémoire de master | \url{https://gitlab.com/Aethor/master-thesis}}
+  {Natural Language Processing applied to Interactive Character Relationships Visualization in Novels}
   {National Central University}
-  {2020 (current)}
+  {2020}
   {
     \begin{cvitems}
-      \item Part of the master thesis at NCU
-      \item An original method for automatic quote attribution in literary texts
-      \item Use of deep spans representations
-      \item First ever usage of a BERT-based model for automatic quote attribution
-      \item System easily adaptable to other domains 
+      \item Mon mémoire de master, réalisé au NCU
+      \item Utilisation de technique d'apprentissage prodond afin d'extraire des graphes de personnages de romans littéraires
     \end{cvitems}
   }
 
   \cventry
-  {\href{https://github.com/Aethor/nintent}{\textbf{github link}} | \href{https://drive.google.com/open?id=1UbUyf57dc8fzP_Z-UZKmebMoGD3Ei9tc}{\textbf{report link}}}
+  {Attribution de la parole dans les romans | \url{https://gitlab.com/Aethor/bert-quote-attribution}}
+  {Bert for Quote Attribution}
+  {National Central University}
+  {2020}
+  {
+    \begin{cvitems}
+      \item La contribution centrale de ma thèse de master au NCU
+      \item Une méthode originale d'attribution automatique de la parole dans les textes littéraires
+      \item Utilisation d'un modèle basé sur \textit{BERT}
+      \item Méthode facilement adaptable à d'autres problèmes
+    \end{cvitems}
+  }
+
+  \cventry
+  {Parsing sémantique d'instructions | \url{https://github.com/Aethor/nintent}}
   {Nintent}
   {National Central University}
   {2019}
   {
     \begin{cvitems}
-      \item Final project of National Central University Natural Language Processing class
-      \item Proposal of a novel deep-learning based algorithm for semantic parsing
+      \item Projet final du cours de traitement du langage naturel du NCU
+      \item Proposition d'un algorithme de parsing sémantique basé sur des méthodes de deep-learning
     \end{cvitems}
   }
 
   \cventry
-  {\href{https://gitlab.com/Aethor/bert-quote-attribution}{\textbf{gitlab link}} | \href{https://drive.google.com/open?id=1yXpPkRviuXfG6A0qUQQn782hfrFmdzLI}{\textbf{report link}}}
+  {T-Brain AI-Cup 2019 | \url{https://gitlab.com/Aethor/abstractcadabra-project}}
   {Abstractcadabra project}
   {National Central University}
   {2019}
   {
     \begin{cvitems}
-      \item Participation to the T-Brain AI Cup, a national Taiwan competition
-      \item Usage of transfer-learning and a hierarchical model for sentences tagging
-      \item The project obtained the 51st place of the leaderboard
+      \item Utilisation d'apprentissage par transfert et d'un modèle hierarchique pour le tagging de phrases
+      \item Le projet a obtenu la 51e place du classement, sur plus de 200 participants
+      \item Performances de niveau top 10 après amélioration du système à posteriori
     \end{cvitems}
   }
 
   \cventry
-  {\href{https://gitlab.com/Aethor/deltaray}{\textbf{gitlab link}} | \href{https://drive.google.com/open?id=1Pek2899zQjD0A-Mq9wzFfWmRks-o3iNQ}{\textbf{report link}}}
-  {DeltaRay}
-  {University of Technology of Belfort-Montbéliard}
+  {BERT et reconnaissance d'entités nommées | \url{https://gitlab.com/Aethor/transformner}}
+  {TransformNER}
+  {National Central University}
   {2019}
   {
     \begin{cvitems}
-      \item Preliminary work for the master thesis at NCU
-      \item Conversational character networks extraction in cinema screenplays
-      \item 3D character networks visualisation prototype
+      \item Projet effectué pendant le premier semestre au NCU
+      \item Utilisation de BERT pour la reconnaissance d'entités nommées
+      \item Utilisation de la librairie Hyperopt, permettant l'optimisation d'hyperparamètres
     \end{cvitems}
   }
 
   \cventry
-  {\href{https://drive.google.com/open?id=1q9ahp9iRNREYmjb1pVUp9wJLECDwfH35}{\textbf{report link (french)}}}
+  {Réseaux de personnages dans le cinéma | \url{https://gitlab.com/Aethor/deltaray}}
+  {DeltaRay}
+  {Université de Technologie de Belfort-Montbéliard}
+  {2019}
+  {
+    \begin{cvitems}
+      \item Travail préliminaire à mon mémoire de master au NCU
+      \item Extraction de réseaux conversationnels de personnages dans des transcripts de cinéma
+      \item Prototype permettant la visualisation de réseaux de personnages dynamiques en 3D
+    \end{cvitems}
+  }
+
+  \cventry
+  {Portage d'un SDK biométrique sur le cloud | \url{https://drive.google.com/open?id=1q9ahp9iRNREYmjb1pVUp9wJLECDwfH35}}
   {MorphoKit Online}
   {Idemia}
   {2018}
   {
     \begin{cvitems}
-      \item Cloud-based version of an existing Idemia biometric development kit (SDK)
-      \item Participation in all stages of the project : Design, testing strategy, security risks estimation, implementation, deployment...
+      \item Mon projet principal durant mon stage à \textit{Idemia}
+      \item Portage d'un kit de développement biométrique existant sur le cloud
+      \item Participation à toutes les étapes du projet : design, stratégie de tests, estimation des risques, implémentation, déploiement...
     \end{cvitems}
   }
 
