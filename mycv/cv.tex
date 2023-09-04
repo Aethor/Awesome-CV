@@ -6,6 +6,9 @@
 
 \documentclass[12pt, a4paper]{awesome-cv}
 
+% fr
+\usepackage[francais]{babel}
+
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -36,20 +39,20 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo{./examples/profile.png}
 \name{Arthur}{Amalvy}
-\position{Candidat à une thèse de doctorat}
-\address{Nancy, France}
-\mobile{+33620730174}
-\email{arthur.amalvyoff@gmail.com}
+\position{Doctorant en Traitement Automatique du Langage Naturel au Laboratoire Informatique d'Avignon}
+\address{Avignon, France}
+% \mobile{+33620730174}
+\email{arthur.amalvy@univ-avignon.fr}
 % \homepage{www.posquit0.com}
 \github{Aethor}
 \gitlab{Aethor}
-\linkedin{https://www.linkedin.com/in/arthur-amalvy-576030162/}
+% \linkedin{https://www.linkedin.com/in/arthur-amalvy-576030162/}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
 % \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
+\googlescholar{yHOkn78AAAAJ}{Arthur Amalvy}
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
@@ -76,6 +79,20 @@
 \begin{cventries}
 
   \cventry
+  {Doctorat en Informatique} % Degree
+  {Laboratoire Informatique d'Avignon} % Institution
+  {Avignon} % Location
+  {Septembre 2021 - Courant} % Date(s)
+  {
+    \begin{cvitems} % Description(s) bullet points
+      \item Titre de la thèse : \textit{Traitement du langage et modélisation de relations pour la représentation unifiée de documents narratifs}
+      \item Encadré par Vincent Labatut et Richard Dufour
+      \item Activité de recherche : publications d'articles scientifiques relatifs à la thèse, développement de logiciels permettant l'extraction automatique de réseaux de personnages
+      \item Activité d'enseignement : C++, HTML/CSS, JavaFX, Android
+    \end{cvitems}
+  }
+
+  \cventry
   {Master en Informatique et ingénierie de l'information} % Degree
   {National Central University} % Institution
   {Taiwan} % Location
@@ -83,12 +100,7 @@
   {
     \begin{cvitems} % Description(s) bullet points
       \item Double-diplôme
-      \item Suivi de plusieurs cours à l'université, notamment :
-        \begin{itemize}
-          \item apprentissage machine et apprentissage profond 
-          \item traitement du langage naturel
-          \item traitement du langage naturel appliqué aux réseaux sociaux 
-        \end{itemize}
+      \item Suivi de plusieurs cours à l'université, notamment en apprentissage machine, apprentissage profond et traitement du langage naturel
       \item Classé respectivement 7e puis 4e sur plus de 110 étudiants du département informatique à l'issus des deux semestres
       \item Recherches à l'~\textit{Intelligent Information Research Laboratory (IISR)}, specialisé en traitement du langage naturel
       \item Mémoire de master sur l'extraction automatique et la visualisation de réseaux de personnages dans les romans
@@ -103,12 +115,7 @@
   {
     \begin{cvitems}
       \item Spécialisation en image, interaction et réalité virtuelle (\textit{I2RV})
-      \item Suivi de plusieurs cours relatifs à l'intelligence artificielle, dont :
-        \begin{itemize}
-          \item Optimisation et Recherche Opérationelle
-          \item Intelligence Artificielle : Concepts Fondamentaux et Langages Dédiés
-          \item Intelligence Artificielle pour Jeux Sérieux 
-        \end{itemize}
+      \item Suivi de plusieurs cours relatifs à l'intelligence artificielle
       \item Premiers travaux sur l'extraction de réseaux de personnages sur des transcripts de cinéma
     \end{cvitems}
   }
@@ -116,24 +123,19 @@
   \cventry
   {DEUTEC}
   {Université de Technologie de Belfort-Montbéliard}
-  {Sévenans, Territoire de Belfort, France}
+  {Sévenans, Territoire de Belfort}
   {Septembre 2015 - Juillet 2017}
   {
     \begin{cvitems}
       \item Prépa intégrée à l'UTBM
-      \item Début de spécialisation en informatique :
-        \begin{itemize}
-          \item Programmation en C
-          \item Algorithmes et structures de données
-          \item Programmation orientée objet
-        \end{itemize}
+      \item Début de spécialisation en informatique
     \end{cvitems}
   }
 
   \cventry
   {Baccalauréat scientifique}
   {Lycée Jacques Prévert}
-  {Saint-Christol-Lès-Alès, Gard, France}
+  {Saint-Christol-Lès-Alès, Gard}
   {2015}
   {
     \begin{cvitems}
@@ -156,11 +158,7 @@
   {Octobre 2020 - maintenant}
   {
     \begin{cvitems}
-      \item Inclusion de fonctionnalités liées à l'intelligence artificielle dans un logiciel médical, telles que :
-      \begin{itemize}
-        \item Détection automatique de l'orientation d'un document
-        \item Prédiction de la prochaine action utilisateur dans le but de fluidifier l'interface
-      \end{itemize}
+      \item Inclusion de fonctionnalités liées à l'intelligence artificielle dans un logiciel médical
       \item Analyse de données d'usage du logiciel
     \end{cvitems}
   }
@@ -173,140 +171,6 @@
   {
     \begin{cvitems}
       \item Conception et implémentation d'un prototype service biométrique basé sur le cloud
-      \item Utilisation de plusieurs technologies liées au cloud
-    \end{cvitems}
-  }
-
-\end{cventries}
-
-
-\newpage
-
-\cvsection{Compétences}
-
-\begin{cvskills}
-  \cvskill{Langages}
-  {Anglais (Niveau C2), Chinois (débutant)}
-  
-  \cvskill{Langages de programmation}
-  {Principalement Python, C et Java}
-
-  \cvskill{Apprentissage machine}
-  {Apprentissage ``classique'', réseaux de neurones, réseaux de neurones récurrents, transformers, apprentissage par transfert (modèles types \textit{BERT})}
-
-  \cvskill{Outils}
-  {PyTorch, huggingface transformers, nltk, spacy, scikit-learn}
-\end{cvskills}
-
-
-\cvsection{Évenements}
-
-\begin{cvhonors}
-  \cvhonor
-  {T-Brain AI-Cup}
-  {51e place à la T-Brain AI Cup 2019}
-  {Taiwan}
-  {2019}
-  
-  \cvhonor
-  {Coupe de France de robotique}
-  {Double participation à la coupe de france de robotique sous les couleurs de l'UTBM}
-  {La Roche sur Yon}
-  {2018, 2019}
-\end{cvhonors}
-
-
-\cvsection{Projets}
-
-\begin{cventries}
-
-  \cventry
-  {Mémoire de master | \url{https://gitlab.com/Aethor/master-thesis}}
-  {Natural Language Processing applied to Interactive Character Relationships Visualization in Novels}
-  {National Central University}
-  {2020}
-  {
-    \begin{cvitems}
-      \item Mon mémoire de master, réalisé au NCU
-      \item Utilisation de technique d'apprentissage prodond afin d'extraire des graphes de personnages de romans littéraires
-    \end{cvitems}
-  }
-
-  \cventry
-  {Attribution de la parole dans les romans | \url{https://gitlab.com/Aethor/bert-quote-attribution}}
-  {Bert for Quote Attribution}
-  {National Central University}
-  {2020}
-  {
-    \begin{cvitems}
-      \item La contribution centrale de ma thèse de master au NCU
-      \item Une méthode originale d'attribution automatique de la parole dans les textes littéraires
-      \item Utilisation d'un modèle basé sur \textit{BERT}
-      \item Méthode facilement adaptable à d'autres problèmes
-    \end{cvitems}
-  }
-
-  \cventry
-  {Parsing sémantique d'instructions | \url{https://github.com/Aethor/nintent}}
-  {Nintent}
-  {National Central University}
-  {2019}
-  {
-    \begin{cvitems}
-      \item Projet final du cours de traitement du langage naturel du NCU
-      \item Proposition d'un algorithme de parsing sémantique basé sur des méthodes de deep-learning
-    \end{cvitems}
-  }
-
-  \cventry
-  {T-Brain AI-Cup 2019 | \url{https://gitlab.com/Aethor/abstractcadabra-project}}
-  {Abstractcadabra project}
-  {National Central University}
-  {2019}
-  {
-    \begin{cvitems}
-      \item Utilisation d'apprentissage par transfert et d'un modèle hierarchique pour le tagging de phrases
-      \item Le projet a obtenu la 51e place du classement, sur plus de 200 participants
-      \item Performances de niveau top 10 après amélioration du système à posteriori
-    \end{cvitems}
-  }
-
-  \cventry
-  {BERT et reconnaissance d'entités nommées | \url{https://gitlab.com/Aethor/transformner}}
-  {TransformNER}
-  {National Central University}
-  {2019}
-  {
-    \begin{cvitems}
-      \item Projet effectué pendant le premier semestre au NCU
-      \item Utilisation de BERT pour la reconnaissance d'entités nommées
-      \item Utilisation de la librairie Hyperopt, permettant l'optimisation d'hyperparamètres
-    \end{cvitems}
-  }
-
-  \cventry
-  {Réseaux de personnages dans le cinéma | \url{https://gitlab.com/Aethor/deltaray}}
-  {DeltaRay}
-  {Université de Technologie de Belfort-Montbéliard}
-  {2019}
-  {
-    \begin{cvitems}
-      \item Travail préliminaire à mon mémoire de master au NCU
-      \item Extraction de réseaux conversationnels de personnages dans des transcripts de cinéma
-      \item Prototype permettant la visualisation de réseaux de personnages dynamiques en 3D
-    \end{cvitems}
-  }
-
-  \cventry
-  {Portage d'un SDK biométrique sur le cloud | \url{https://drive.google.com/open?id=1q9ahp9iRNREYmjb1pVUp9wJLECDwfH35}}
-  {MorphoKit Online}
-  {Idemia}
-  {2018}
-  {
-    \begin{cvitems}
-      \item Mon projet principal durant mon stage à \textit{Idemia}
-      \item Portage d'un kit de développement biométrique existant sur le cloud
-      \item Participation à toutes les étapes du projet : design, stratégie de tests, estimation des risques, implémentation, déploiement...
     \end{cvitems}
   }
 
