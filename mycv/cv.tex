@@ -6,6 +6,10 @@
 
 \documentclass[11pt, a4paper]{awesome-cv}
 
+% bibliography
+\usepackage[sorting=none]{biblatex}
+\addbibresource{biblio.bib}
+
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -15,7 +19,7 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-emerald}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
@@ -34,22 +38,22 @@
 
 
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
+\photo[circle,left]{./mycv/id.jpg}
 \name{Arthur}{Amalvy}
-\position{Computer Science Engineer}
-\address{Nancy, France}
+\position{Natural Language Processing Researcher}
+\address{Avignon, France}
 \mobile{+33620730174}
-\email{arthur.amalvyoff@gmail.com}
+\email{arthur.amalvy@univ-avignon.fr}
 % \homepage{www.posquit0.com}
 \github{Aethor}
 \gitlab{Aethor}
-\linkedin{https://www.linkedin.com/in/arthur-amalvy-576030162/}
+% \linkedin{https://www.linkedin.com/in/arthur-amalvy-576030162/}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
 % \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
+\googlescholar{yHOkn78AAAAJ}{Arthur Amalvy}
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
@@ -70,25 +74,26 @@
   {\thepage}
 
 
-\cvsection{Experience}
+\cvsection{Education}
 
 \begin{cventries}
 
   \cventry
-  {AI Engineer}
-  {Prokov Editions}
-  {Nancy, France}
-  {October 2020 - now}
+  {PhD in Natural Language Processing}
+  {Avignon Computer Science Laboratory}
+  {Avignon, France}
+  {September 2021 - December 2024}
   {
     \begin{cvitems}
-      \item AI specialist for a medical software company
+      \item Thesis title: \textit{Natural Language Processing for the Representation of Narrative Texts through Character Networks}
+      \item Teacher assistant experience: C++, Advanced Algorithms, HTML/CSS, JavaFX, Android, Python, Innovation
     \end{cvitems}
   }
 
   \cventry
   {Master in Computer Science and Information Engineering} % Degree
   {National Central University} % Institution
-  {Taiwan} % Location
+  {Zhongli, Taiwan} % Location
   {September 2019 - July 2020} % Date(s)
   {
     \begin{cvitems} % Description(s) bullet points
@@ -101,8 +106,8 @@
   \cventry
   {Engineering Degree in Computer Science}
   {University of Technology of Belfort-Montbéliard}
-  {Belfort, Territoire de Belfort, France}
-  {September 2017 - July 2020 (current)}
+  {Belfort, France}
+  {September 2017 - July 2020}
   {
     \begin{cvitems}
       \item Specialisation in Image, Interaction and Virtual Reality (I2RV)
@@ -110,22 +115,9 @@
   }
 
   \cventry
-  {Cloud Microservices Architect Intern}
-  {Idemia}
-  {Osny, Région Parisienne, France}
-  {September 2018 - February 2019}
-  {
-    \begin{cvitems}
-      \item Six-months engineering internship 
-      \item Conception and creation of a cloud based biometric system
-      \item Worked with several cloud-related technologies : AWS, Docker, Kubernetes, Flask, REST APIs, OpenAPI, Redis, RabbitMQ, Prometheus
-    \end{cvitems}
-  }
-
-  \cventry
   {DEUTEC}
   {University of Technology of Belfort-Montbéliard}
-  {Sévenans, Territoire de Belfort, France}
+  {Sévenans, France}
   {September 2015 - July 2017}
   {
     \begin{cvitems}
@@ -136,11 +128,41 @@
   \cventry
   {Baccalauréat}
   {Lycée Jacques Prévert}
-  {Saint-Christol-Lès-Alès, Gard, France}
+  {Saint-Christol-Lès-Alès, France}
   {2015}
   {
     \begin{cvitems}
       \item Obtained with high honors ("mention bien")
+    \end{cvitems}
+  }
+
+\end{cventries}
+
+
+\cvsection{Industry Experience}
+
+\begin{cventries}
+
+  \cventry
+  {AI Engineer}
+  {Prokov Editions}
+  {Nancy, France}
+  {October 2020 - September 2021}
+  {
+    \begin{cvitems}
+      \item AI specialist for a medical software company
+    \end{cvitems}
+  }
+
+  \cventry
+  {Cloud Microservices Architect Intern}
+  {Idemia}
+  {Osny, France}
+  {September 2018 - February 2019}
+  {
+    \begin{cvitems}
+      \item Conception and creation of a cloud based biometric system
+      \item Worked with several cloud-related technologies : AWS, Docker, Kubernetes, Flask, REST APIs, OpenAPI, Redis, RabbitMQ, Prometheus
     \end{cvitems}
   }
 
@@ -154,13 +176,13 @@
   {French (Native speaker), English (C2 level), Chinese (Beginnner)}
   
   \cvskill{Programming Languages}
-  {Mainly Python, C, Java (but also : Objective C, Swift, a bit of C++ and Javascript...)}
+  {Mainly Python, C, Common Lisp}
 
   \cvskill{Machine Learning}
-  {Classical machine learning, Neural Networks, Recurrent Neural Networks (LSTM / GRU), Transformers, Transfer-learning (BERT-based models...)}
+  {Classical machine learning, Neural Networks, RNN, Transformers, Transfer-learning (BERT-based models...)}
 
   \cvskill{Main Tools}
-  {PyTorch, huggingface transformers, nltk, spacy, scikit-learn, GTK+, Linux, Git, Docker, Kubernetes}
+  {PyTorch, huggingface transformers, nltk, spaCy, scikit-learn, Linux, Git}
 \end{cvskills}
 
 
@@ -174,79 +196,56 @@
   {2019}
   
   \cvhonor
-  {French Robotics Cup}
-  {Participated in the French Robotics Cup twice in a row for UTBM}
+  {France Robotics Cup}
+  {Participated to the France Robotics Cup 5 times}
   {La Roche sur Yon}
-  {2018, 2019}
+  {2018, 2019, 2022--2024}
 \end{cvhonors}
 
 
-\cvsection{Projects}
+% HACK: here to force a newpage
+\newpage
+\cvsection{Scientific Publications}
+
+\nocite{*}
+% \printbibliography[title=Scientific Publications]
+\printbibliography[heading=none]
+
+
+\cvsection{Open-source software}
 
 \begin{cventries}
 
   \cventry
-  {\href{https://gitlab.com/Aethor/bert-quote-attribution}{\textbf{gitlab link}}}
-  {Bert for Quote Attribution}
-  {National Central University}
-  {2020 (current)}
+  {\href{https://github.com/CompNet/Renard}{\textbf{See on GitHub}}}
+  {Renard (Relationship Extraction from NARrative Documents)}
+  {}
+  {2021-2024}
   {
     \begin{cvitems}
-      \item Part of the master thesis at NCU
-      \item An original method for automatic quote attribution in literary texts
-      \item Use of deep spans representations
-      \item First ever usage of a BERT-based model for automatic quote attribution
-      \item System easily adaptable to other domains 
+      \item A Modular character network extraction pipeline
     \end{cvitems}
   }
 
   \cventry
-  {\href{https://github.com/Aethor/nintent}{\textbf{github link}} | \href{https://drive.google.com/open?id=1UbUyf57dc8fzP_Z-UZKmebMoGD3Ei9tc}{\textbf{report link}}}
-  {Nintent}
-  {National Central University}
-  {2019}
+  {\href{https://github.com/CompNet/Tibert}{\textbf{See on GitHub}}}
+  {Tibert}
+  {}
+  {2021-2024}
   {
     \begin{cvitems}
-      \item Final project of National Central University Natural Language Processing class
-      \item Proposal of a novel deep-learning based algorithm for semantic parsing
+      \item A simple to use Python coreference resolution library
     \end{cvitems}
   }
 
   \cventry
-  {\href{https://gitlab.com/Aethor/bert-quote-attribution}{\textbf{gitlab link}} | \href{https://drive.google.com/open?id=1yXpPkRviuXfG6A0qUQQn782hfrFmdzLI}{\textbf{report link}}}
-  {Abstractcadabra project}
-  {National Central University}
-  {2019}
+  {\href{https://gitlab.com/sharpattack/blink}{\textbf{See on GitLab}}}
+  {Blink}
+  {}
+  {2021-2024}
   {
     \begin{cvitems}
-      \item Participation to the T-Brain AI Cup, a national Taiwan competition
-      \item Usage of transfer-learning and a hierarchical model for sentences tagging
-      \item The project obtained the 51st place of the leaderboard
-    \end{cvitems}
-  }
-
-  \cventry
-  {\href{https://gitlab.com/Aethor/deltaray}{\textbf{gitlab link}} | \href{https://drive.google.com/open?id=1Pek2899zQjD0A-Mq9wzFfWmRks-o3iNQ}{\textbf{report link}}}
-  {DeltaRay}
-  {University of Technology of Belfort-Montbéliard}
-  {2019}
-  {
-    \begin{cvitems}
-      \item Preliminary work for the master thesis at NCU
-      \item Conversational character networks extraction in cinema screenplays
-      \item 3D character networks visualisation prototype
-    \end{cvitems}
-  }
-
-  \cventry
-  {\href{https://drive.google.com/open?id=1q9ahp9iRNREYmjb1pVUp9wJLECDwfH35}{\textbf{report link (french)}}}
-  {MorphoKit Online}
-  {Idemia}
-  {2018}
-  {
-    \begin{cvitems}
-      \item Cloud-based version of an existing Idemia biometric development kit (SDK)
-      \item Participation in all stages of the project : Design, testing strategy, security risks estimation, implementation, deployment...
+      \item A Python library to work with RPLidar A2M8
     \end{cvitems}
   }
 
