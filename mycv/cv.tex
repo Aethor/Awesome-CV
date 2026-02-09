@@ -7,8 +7,13 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 
 % bibliography
-\usepackage[sorting=none]{biblatex}
-\addbibresource{biblio.bib}
+\usepackage[sorting=none, maxnames=999]{biblatex}
+\addbibresource{conferences.bib}
+\addbibresource{journals.bib}
+\addbibresource{workshops.bib}
+\addbibresource{phd_thesis.bib}
+\addbibresource{master_thesis.bib}
+\addbibresource{preprints.bib}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -40,13 +45,13 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[circle,left]{./mycv/id.jpg}
 \name{Arthur}{Amalvy}
-\position{Natural Language Processing Researcher}
-\address{Avignon, France}
+\position{Postdoctoral Fellow in Natural Language Processing}
+\address{Institute of Information Science, Academia Sinica, Taipei, Taiwan}
 \mobile{+33620730174}
-\email{arthur.amalvy@univ-avignon.fr}
+\email{arthuramalvy@as.edu.tw}
 % \homepage{www.posquit0.com}
-\github{Aethor}
-\gitlab{Aethor}
+% \github{Aethor}
+% \gitlab{Aethor}
 % \linkedin{https://www.linkedin.com/in/arthur-amalvy-576030162/}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -74,65 +79,45 @@
   {\thepage}
 
 
-\cvsection{Education}
+\cvsection{Academic Experience}
 
 \begin{cventries}
 
   \cventry
-  {PhD in Natural Language Processing}
+  {Institute of Information Science, Academia Sinica}
+  {Postdoctoral Fellow}
+  {Taipei, Taiwan}
+  {March 2025 - now}
+  {
+    \begin{cvitems}
+      \item Working on the interactions between large language models and temporal knowledge graphs
+    \end{cvitems}
+  }
+
+  \cventry
   {Avignon Computer Science Laboratory}
+  {Ph.D. in Natural Language Processing}
   {Avignon, France}
   {September 2021 - December 2024}
   {
     \begin{cvitems}
       \item Thesis title: \textit{Natural Language Processing for the Representation of Narrative Texts through Character Networks}
+      \item Research focus: Information extraction (named entity recognition, coreference resolution), character networks, graph applications
+      \item Published multiple articles in journals and top-tier natural language processing conferences (see page 2)
       \item Teacher assistant experience: C++, Advanced Algorithms, HTML/CSS, JavaFX, Android, Python, Innovation
     \end{cvitems}
   }
 
   \cventry
-  {Master in Computer Science and Information Engineering} % Degree
-  {National Central University} % Institution
-  {Zhongli, Taiwan} % Location
-  {September 2019 - July 2020} % Date(s)
+  {National Central University}
+  {Master in Computer Science and Information Engineering}
+  {Zhongli, Taiwan}
+  {September 2019 - July 2020}
   {
-    \begin{cvitems} % Description(s) bullet points
+    \begin{cvitems} 
       \item Dual-Degree program
       \item Courses at the university, focused on machine learning, deep learning and natural language processing
       \item Research at the Intelligent Information Research Laboratory (IISR), specialised in natural language processing
-    \end{cvitems}
-  }
-
-  \cventry
-  {Engineering Degree in Computer Science}
-  {University of Technology of Belfort-Montbéliard}
-  {Belfort, France}
-  {September 2017 - July 2020}
-  {
-    \begin{cvitems}
-      \item Specialisation in Image, Interaction and Virtual Reality (I2RV)
-    \end{cvitems}
-  }
-
-  \cventry
-  {DEUTEC}
-  {University of Technology of Belfort-Montbéliard}
-  {Sévenans, France}
-  {September 2015 - July 2017}
-  {
-    \begin{cvitems}
-      \item Integrated prep at UTBM
-    \end{cvitems}
-  }
-
-  \cventry
-  {Baccalauréat}
-  {Lycée Jacques Prévert}
-  {Saint-Christol-Lès-Alès, France}
-  {2015}
-  {
-    \begin{cvitems}
-      \item Obtained with high honors ("mention bien")
     \end{cvitems}
   }
 
@@ -144,8 +129,8 @@
 \begin{cventries}
 
   \cventry
-  {AI Engineer}
   {Prokov Editions}
+  {AI Engineer}
   {Nancy, France}
   {October 2020 - September 2021}
   {
@@ -155,14 +140,54 @@
   }
 
   \cventry
-  {Cloud Microservices Architect Intern}
   {Idemia}
+  {Cloud Microservices Architect Intern}
   {Osny, France}
   {September 2018 - February 2019}
   {
     \begin{cvitems}
-      \item Conception and creation of a cloud based biometric system
+      \item Conception and creation of a cloud-based biometric system
       \item Worked with several cloud-related technologies : AWS, Docker, Kubernetes, Flask, REST APIs, OpenAPI, Redis, RabbitMQ, Prometheus
+    \end{cvitems}
+  }
+
+\end{cventries}
+
+
+\cvsection{Prior Education}
+
+\begin{cventries}
+
+  \cventry
+  {University of Technology of Belfort-Montbéliard}
+  {Engineering Degree in Computer Science}
+  {Belfort, France}
+  {September 2017 - July 2020}
+  {
+    \begin{cvitems}
+      \item Specialisation in Image, Interaction and Virtual Reality (I2RV)
+    \end{cvitems}
+  }
+
+  \cventry
+  {University of Technology of Belfort-Montbéliard}
+  {DEUTEC}
+  {Sévenans, France}
+  {September 2015 - July 2017}
+  {
+    \begin{cvitems}
+      \item Integrated prep at UTBM
+    \end{cvitems}
+  }
+
+  \cventry
+  {Lycée Jacques Prévert}
+  {Baccalauréat}
+  {Saint-Christol-Lès-Alès, France}
+  {2015}
+  {
+    \begin{cvitems}
+      \item Obtained with high honors ("mention bien")
     \end{cvitems}
   }
 
@@ -173,16 +198,13 @@
 
 \begin{cvskills}
   \cvskill{Languages}
-  {French (Native speaker), English (C2 level), Chinese (Beginnner)}
+  {French (Native speaker), English (C2 level), Chinese (Basics)}
   
   \cvskill{Programming Languages}
   {Mainly Python, C, Common Lisp}
 
-  \cvskill{Machine Learning}
-  {Classical machine learning, Neural Networks, RNN, Transformers, Transfer-learning (BERT-based models...)}
-
-  \cvskill{Main Tools}
-  {PyTorch, huggingface transformers, nltk, spaCy, scikit-learn, Linux, Git}
+  \cvskill{Artifical Intelligence}
+  {Machine learning, Deep Learning, Transformers, Transfer-learning, LLM, Knowledge Graphs}
 \end{cvskills}
 
 
@@ -197,19 +219,57 @@
   
   \cvhonor
   {France Robotics Cup}
-  {Participated to the France Robotics Cup 5 times}
+  {Participated to the France Robotics Cup 6 times}
   {La Roche sur Yon}
-  {2018, 2019, 2022--2024}
+  {2018, 2019, 2022--2025}
 \end{cvhonors}
 
 
 % HACK: here to force a newpage
-\newpage
-\cvsection{Scientific Publications}
+% \newpage
+\cvsection{Conference Articles}
 
-\nocite{*}
-% \printbibliography[title=Scientific Publications]
-\printbibliography[heading=none]
+\begin{refsection}[conferences.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+
+\cvsection{Journal Articles}
+
+\begin{refsection}[journals.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+
+\cvsection{Workshop Articles}
+
+\begin{refsection}[workshops.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+
+\cvsection{Theses}
+
+\begin{refsection}[phd_thesis.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+\begin{refsection}[master_thesis.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
+
+
+\cvsection{Preprints}
+
+\begin{refsection}[preprints.bib]
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{refsection}
 
 
 \cvsection{Open-source software}
